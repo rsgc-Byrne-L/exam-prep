@@ -8,10 +8,38 @@
 
 import Foundation
 
-var reading1 = 42
-var reading2 = 10
-var reading3 = 9
-var reading4 = 2
+var number = 1
+
+var reading1 = 0
+var reading2 = 0
+var reading3 = 0
+var reading4 = 0
+
+repeat {
+
+print ("Reading \(number) = ", terminator: "")
+
+if let input = readLine(stripNewline: true) {
+    if let inputAsInt = Int(input) {
+        if number == 1 {
+            reading1 = inputAsInt
+            number += 1
+        } else if number == 2 {
+            reading2 = inputAsInt
+            number += 1
+        } else if number == 3 {
+            reading3 = inputAsInt
+            number += 1
+        } else if number == 4 {
+            reading4 = inputAsInt
+            number += 1
+        }
+        
+    } else {
+        print("Please input an integer!")
+    }
+}
+} while number >= 4
 
 if reading1 < reading2 && reading2 < reading3 && reading3 < reading4 {
     print("Fish Rising!")
