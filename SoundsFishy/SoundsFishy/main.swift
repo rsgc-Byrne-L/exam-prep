@@ -1,6 +1,12 @@
-//: Playground - noun: a place where people can play
+//
+//  main.swift
+//  SoundsFishy
+//
+//  Created by Liam Byrne on 2016-05-27.
+//  Copyright © 2016 Liam Byrne. All rights reserved.
+//
 
-import Cocoa
+import Foundation
 
 var reading1 = 42
 var reading2 = 10
@@ -16,3 +22,5 @@ if reading1 < reading2 && reading2 < reading3 && reading3 < reading4 {
 } else {
     print("No Fish!")
 }
+
+
